@@ -7,7 +7,7 @@
         <hint/>
         <name/>
         <order>100</order>
-        <roles>x_hoo_service_db.user</roles>
+        <roles>x_hoo_service_db.user,admin</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>VelentL</sys_created_by>
         <sys_created_on>2025-05-12 18:56:02</sys_created_on>
@@ -15,7 +15,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9f8ef650fb29aa105ebef52cbeefdc4e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Service Health Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="Service Health" source="x_hoo_service_db">e1a3ac2ffb21aad461f8f17daeefdce4</sys_package>
@@ -23,8 +23,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Service Health">e1a3ac2ffb21aad461f8f17daeefdce4</sys_scope>
         <sys_update_name>sys_app_application_9f8ef650fb29aa105ebef52cbeefdc4e</sys_update_name>
-        <sys_updated_by>VelentL</sys_updated_by>
-        <sys_updated_on>2025-05-13 09:49:51</sys_updated_on>
+        <sys_updated_by>adm.danny.black</sys_updated_by>
+        <sys_updated_on>2025-05-22 11:29:25</sys_updated_on>
         <title>Service Health Dashboard</title>
         <view_name/>
     </sys_app_application>

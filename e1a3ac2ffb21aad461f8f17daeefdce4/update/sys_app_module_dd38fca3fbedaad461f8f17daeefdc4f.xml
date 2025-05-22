@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Service Health Dashboard">9f8ef650fb29aa105ebef52cbeefdc4e</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Service Health Dashboard</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query>/x/hoo/shd/service-health-dashboard</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_hoo_service_db.admin,admin,x_hoo_service_db.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>adm.danny.black</sys_created_by>
+        <sys_created_on>2025-05-22 11:29:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dd38fca3fbedaad461f8f17daeefdc4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Health Dashboard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Health" source="x_hoo_service_db">e1a3ac2ffb21aad461f8f17daeefdce4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Service Health">e1a3ac2ffb21aad461f8f17daeefdce4</sys_scope>
+        <sys_update_name>sys_app_module_dd38fca3fbedaad461f8f17daeefdc4f</sys_update_name>
+        <sys_updated_by>adm.danny.black</sys_updated_by>
+        <sys_updated_on>2025-05-22 11:29:09</sys_updated_on>
+        <timeline_page/>
+        <title>Service Health Dashboard</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>
