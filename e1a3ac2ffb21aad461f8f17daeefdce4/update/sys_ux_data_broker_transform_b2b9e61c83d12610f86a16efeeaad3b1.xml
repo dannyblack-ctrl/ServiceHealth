@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_hoo_service_db.services</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>services</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var servicesArray = [];
+
+    var service = new GlideRecord("cmdb_ci_service");
+    service.addEncodedQuery('nameINCTB, Cyclamen, IABS Service, National Automatic Number Plate Recognition (NAS), Police National Computer, Helios, Child Abuse Image Database, Police National Database, Dangerous Persons Database VISOR, Semaphore Service, Network^ORnumber=BSN0003183');
+    service.query();
+
+    while (service.next()) {
+
+        var obj = {
+            "name": service.getValue('name'),
+            "color": getColor(service),
+            "link": "active=true^priority=1^ORpriority=2^stateNOT IN6,7^business_service=" + service.getValue("sys_id") + "^ORbusiness_service.parent=" + service.getValue("sys_id"),
+			"sysId":service.getValue('sys_id')
+        };
+        servicesArray.push(obj);
+    }
+
+    return (servicesArray);
+
+
+    function getColor(service) {
+
+        var color = "green";
+
+        var ga = new GlideAggregate("incident");
+        ga.addAggregate("COUNT");
+        ga.addEncodedQuery("active=true^stateNOT IN6,7^business_service=" + service.sys_id + "^ORbusiness_service.parent=" + service.getValue("sys_id"));
+        ga.groupBy("priority");
+        ga.orderBy("priority");
+        ga.query();
+
+        while (ga.next()) {
+            if (ga.priority == "1") {
+                return "#E60000";
+            } else if (ga.priority == "2") {
+                return "#FF8C00";
+            } else {
+                return "green";
+            }
+        }
+        return color;
+    }
+
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 07:08:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b2b9e61c83d12610f86a16efeeaad3b1</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>services</sys_name>
+        <sys_package display_value="Service Health" source="x_hoo_service_db">e1a3ac2ffb21aad461f8f17daeefdce4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Service Health">e1a3ac2ffb21aad461f8f17daeefdce4</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_b2b9e61c83d12610f86a16efeeaad3b1</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-05-15 10:00:30</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b2b9e61c83d12610f86a16efeeaad3b1</id>
+        <sys_created_by>VelentL</sys_created_by>
+        <sys_created_on>2025-05-09 12:06:23</sys_created_on>
+        <sys_id>f934825ffbddee108707f65caeefdcfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-05-09 12:06:23</sys_updated_on>
+        <table>sys_ux_data_broker_transform</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

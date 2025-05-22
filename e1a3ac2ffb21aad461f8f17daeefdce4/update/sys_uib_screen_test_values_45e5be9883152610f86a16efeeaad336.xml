@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config/>
+        <screen display_value="Services List View">41e5329883152610f86a16efeeaad31c</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 08:01:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>45e5be9883152610f86a16efeeaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Health" source="x_hoo_service_db">e1a3ac2ffb21aad461f8f17daeefdce4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Service Health">e1a3ac2ffb21aad461f8f17daeefdce4</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_45e5be9883152610f86a16efeeaad336</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-30 08:01:39</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>
