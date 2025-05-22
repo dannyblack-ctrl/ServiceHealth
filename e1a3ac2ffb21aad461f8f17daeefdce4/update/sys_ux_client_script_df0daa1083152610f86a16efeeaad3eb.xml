@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Tile View">3a59ead883d12610f86a16efeeaad324</macroponent>
+        <name>stylized_text_3/now_default/css</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return '*{display:flex;justify-content:center;align-items:center;border-color: rgb(var(--now-color--neutral-0));border-width: var(--now-static-space--xxs);border-style: solid;border-radius: var(--now-static-border-radius--lg);padding:10px;text-align:center;position:absolute;height:100%;width:100%;left:0;top:0;color:rgb(var(--now-color--neutral-0));background-color:' + api.item.value.color + ';font-weight:bold;font-size:1.05rem;}';
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 07:31:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>df0daa1083152610f86a16efeeaad3eb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>stylized_text_3/now_default/css</sys_name>
+        <sys_package display_value="Service Health" source="x_hoo_service_db">e1a3ac2ffb21aad461f8f17daeefdce4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Service Health">e1a3ac2ffb21aad461f8f17daeefdce4</sys_scope>
+        <sys_update_name>sys_ux_client_script_df0daa1083152610f86a16efeeaad3eb</sys_update_name>
+        <sys_updated_by>VelentL</sys_updated_by>
+        <sys_updated_on>2025-05-15 09:31:53</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>
